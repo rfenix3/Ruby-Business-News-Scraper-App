@@ -23,11 +23,10 @@ To run the program:
     $ ./bin/biz-news
 
 
-## Sample Output
+### Sample Output
 
-==========================================
-Today's Top 10 Business News from CNBC
-==========================================
+**Today's Top 10 Business News from CNBC**
+
 1. European markets higher as tech stocks rally; Gjensidige tumbles 9%
 2. Asian stocks extend gains amid relief over lack of trade escalation
 3. Nasdaq rises to all-time high as Amazon and Facebook hit records
@@ -39,7 +38,7 @@ Today's Top 10 Business News from CNBC
 9. Jury orders J&J to pay nearly $4.7 billion in Missouri asbestos cancer case
 10. Theresa May had a plan in place for Brexit. Then Donald Trump landed 
 
-Enter the NUMBER of the headline you like to read, LIST to refresh, or EXIT to end session.
+Enter the **NUMBER** of the headline you like to read, **LIST** to refresh, or **EXIT** to end session.
 
 ## Development
 

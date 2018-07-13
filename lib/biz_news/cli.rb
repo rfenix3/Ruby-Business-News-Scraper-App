@@ -10,6 +10,7 @@ class BizNews::CLI
   
   def list_headlines
     puts "Today's Top 10 Business News from CNBC"
+    puts "-------------------------------------------------------------------------------------------"
     @headlines = BizNews::Headline.today
     @headlines.each.with_index(1) {|headline, i|
       puts "#{i}. #{headline.title}"
@@ -19,6 +20,7 @@ class BizNews::CLI
   def menu
     input = nil
     while input != "exit"
+      puts "-------------------------------------------------------------------------------------------"
       puts "Enter the NUMBER of the headline you like to read, LIST to refresh, or EXIT to end session."
       input = gets.strip.downcase
 
@@ -44,7 +46,6 @@ class BizNews::CLI
     # puts "Email: #{headline.email}"
     puts "---------------------------------------------------------------------"
     puts "#{headline.article}"
-    puts "====================================================================="
 
     # puts ""
   end
