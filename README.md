@@ -20,12 +20,13 @@ Or install it yourself as:
 ## Usage
 
 To run the program:
+
     $ ./bin/biz-news
 
 
-### Sample Output
+## Sample Output
 
-**Today's Top 10 Business News from CNBC**
+Today's Top 10 Business News from CNBC**
 
 1. European markets higher as tech stocks rally; Gjensidige tumbles 9%
 2. Asian stocks extend gains amid relief over lack of trade escalation
