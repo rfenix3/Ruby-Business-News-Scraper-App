@@ -28,16 +28,16 @@ To run the program:
 
 Today's Top 10 Business News from CNBC                    07/17/2018 18:03
 -------------------------------------------------------------------------------------------
-.1. Nasdaq hits record high after Netflix rebounds well off lows, Amazon rises
-.2. European stocks close higher amid earnings; Fed’s Powell addresses Congress
-.3. Asian shares close lower as energy stocks take a hit
-.4. Oil prices steady in choppy trading as focus turns to supply
-.5. Gold hits year low as dollar steadies after first Fed testimony
-.6. US Treasury yields hold steady after Powell testimony
-.7. Dollar gains after Powell's upbeat tone in testimony
-.8. Amazon says US Prime Day sales 'so far bigger than ever' as glitch is resolved
-.9. Powell: 'Rising chorus of concern' from business over tariffs
-.10. Key Republican Orrin Hatch threatens to check Trump's tariff policy
+1. Nasdaq hits record high after Netflix rebounds well off lows, Amazon rises
+2. European stocks close higher amid earnings; Fed’s Powell addresses Congress
+3. Asian shares close lower as energy stocks take a hit
+4. Oil prices steady in choppy trading as focus turns to supply
+5. Gold hits year low as dollar steadies after first Fed testimony
+6. US Treasury yields hold steady after Powell testimony
+7. Dollar gains after Powell's upbeat tone in testimony
+8. Amazon says US Prime Day sales 'so far bigger than ever' as glitch is resolved
+9. Powell: 'Rising chorus of concern' from business over tariffs
+10. Key Republican Orrin Hatch threatens to check Trump's tariff policy
 -------------------------------------------------------------------------------------------
 Enter the **NUMBER** of the headline you like to read, **LIST** to refresh, or **EXIT** to end session.
 1
