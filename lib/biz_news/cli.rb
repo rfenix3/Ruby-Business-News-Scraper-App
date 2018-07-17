@@ -1,7 +1,12 @@
-# Our CLI controller
+# Our CLI controller responsible for business logic or user interaction
+require 'date'
 
 class BizNews::CLI
-  
+
+  def initialize
+    @systemTime = Time.now.strftime("%m/%d/%Y %H:%M")
+  end
+
   def call
     list_headlines
     menu
@@ -9,7 +14,8 @@ class BizNews::CLI
   end
   
   def list_headlines
-    puts "Today's Top 10 Business News from CNBC"
+
+    puts "Today's Top 10 Business News from CNBC                    #{@systemTime}"
     puts "-------------------------------------------------------------------------------------------"
     @headlines = BizNews::Headline.today
     @headlines.each.with_index(1) {|headline, i|
@@ -32,7 +38,9 @@ class BizNews::CLI
           print_article(headline)
         end
       else
-        puts 'Not sure what you want. Please type list, headline number, or exit.'
+        if input != "exit"
+          puts 'Not sure what you want. Please type list, headline number, or exit.'
+        end
       end
 
     end
@@ -42,10 +50,10 @@ class BizNews::CLI
     puts ""
     puts "====================================================================="
     puts "#{headline.title}"
-    puts "Author: #{headline.author}"
+    puts "Author: #{headline.author}                      #{@systemTime}"
     # puts "Email: #{headline.email}"
     puts "---------------------------------------------------------------------"
-    puts "#{headline.article}"
+    puts "#{headline.article}"  #this calls the method 'article' from headline method
 
     # puts ""
   end

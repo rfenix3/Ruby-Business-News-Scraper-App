@@ -19,7 +19,7 @@ class BizNews::Headline
 
     #scrape news site and then return headines 
     self.scrape_headlines
-    # returns array of headlines...i.e., [headline_1, headline_2], to cli.rb
+    # returns array of headlines(objects)...i.e., [headline_1, headline_2], to cli.rb
   
   end
 

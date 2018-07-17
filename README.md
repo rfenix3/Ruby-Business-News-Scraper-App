@@ -26,20 +26,43 @@ To run the program:
 
 ## Sample Output
 
-Today's Top 10 Business News from CNBC**
-
-1. European markets higher as tech stocks rally; Gjensidige tumbles 9%
-2. Asian stocks extend gains amid relief over lack of trade escalation
-3. Nasdaq rises to all-time high as Amazon and Facebook hit records
-4. Oil edges lower, set for big weekly decline
-5. Gold prices subdued as dollar extends rally
-6. US Treasury rates rise after consumer prices post biggest annual gain in 6 years
-7. Dollar steady against peers; China trade data in focus
-8. Justice Department appeals Time Warner-AT&T merger approval
-9. Jury orders J&J to pay nearly $4.7 billion in Missouri asbestos cancer case
-10. Theresa May had a plan in place for Brexit. Then Donald Trump landed 
-
+Today's Top 10 Business News from CNBC                    07/17/2018 18:03
+-------------------------------------------------------------------------------------------
+.1. Nasdaq hits record high after Netflix rebounds well off lows, Amazon rises
+.2. European stocks close higher amid earnings; Fed’s Powell addresses Congress
+.3. Asian shares close lower as energy stocks take a hit
+.4. Oil prices steady in choppy trading as focus turns to supply
+.5. Gold hits year low as dollar steadies after first Fed testimony
+.6. US Treasury yields hold steady after Powell testimony
+.7. Dollar gains after Powell's upbeat tone in testimony
+.8. Amazon says US Prime Day sales 'so far bigger than ever' as glitch is resolved
+.9. Powell: 'Rising chorus of concern' from business over tariffs
+.10. Key Republican Orrin Hatch threatens to check Trump's tariff policy
+-------------------------------------------------------------------------------------------
 Enter the **NUMBER** of the headline you like to read, **LIST** to refresh, or **EXIT** to end session.
+1
+
+=====================================================================
+Nasdaq hits record high after Netflix rebounds well off lows, Amazon rises
+Author: Fred Imbert                      07/17/2018 18:03
+---------------------------------------------------------------------
+The Nasdaq Composite hit a record high on Tuesday as strong gains in Amazon and a rebound
+in Netflix shares led to a big comeback in tech stocks.The tech-heavy Nasdaq rose 0.6 
+percent, after falling as much as 0.7 percent, as Amazon reached an all-time high. 
+Meanwhile, Netflix traded just 4.3 percent lower after falling as much as 14.1 percent 
+earlier in the session. Netflix initially plunged after reporting weaker-than-expected 
+subscriber growth. The streaming giant said Monday afternoon that domestic subscribers grew
+by 670,000 in the previous quarter, while international additions rose by 4.5 million. 
+Analysts polled by StreetAccount expected domestic gains of 1.23 million and 5.11 million 
+new international subscribers.Bank of America Merrill Lynch said the drop presented a 
+"compelling" buying opportunity, noting the company "never misses twice" when it comes to 
+subscriber growth. "Historically, following a net adds miss, Netflix tends to set guidance 
+cautiously and deliver large beats in the following quarters,” analyst Nat Schindler said 
+in a note to clients Monday... 
+-------------------------------------------------------------------------------------------
+Enter the NUMBER of the headline you like to read, LIST to refresh, or EXIT to end session.
+exit
+See you tomorrow for more news!!!
 
 ## Development
 
