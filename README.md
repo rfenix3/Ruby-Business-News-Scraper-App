@@ -41,7 +41,6 @@ Today's Top 10 Business News from CNBC                    07/17/2018 18:03
 -------------------------------------------------------------------------------------------
 Enter the **NUMBER** of the headline you like to read, **LIST** to refresh, or **EXIT** to end session.
 1
-
 =====================================================================
 Nasdaq hits record high after Netflix rebounds well off lows, Amazon rises
 Author: Fred Imbert                      07/17/2018 18:03
