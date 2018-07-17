@@ -25,7 +25,7 @@ To run the program:
 
 
 ## Sample Output
-
+```
 Today's Top 10 Business News from CNBC                    07/17/2018 18:03
 -------------------------------------------------------------------------------------------
 1. Nasdaq hits record high after Netflix rebounds well off lows, Amazon rises
@@ -41,7 +41,7 @@ Today's Top 10 Business News from CNBC                    07/17/2018 18:03
 -------------------------------------------------------------------------------------------
 Enter the **NUMBER** of the headline you like to read, **LIST** to refresh, or **EXIT** to end session.
 1
-=====================================================================
+---------------------------------------------------------------------
 Nasdaq hits record high after Netflix rebounds well off lows, Amazon rises
 Author: Fred Imbert                      07/17/2018 18:03
 ---------------------------------------------------------------------
@@ -62,7 +62,7 @@ in a note to clients Monday...
 Enter the NUMBER of the headline you like to read, LIST to refresh, or EXIT to end session.
 exit
 See you tomorrow for more news!!!
-
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
