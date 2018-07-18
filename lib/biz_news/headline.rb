@@ -15,11 +15,8 @@ class BizNews::Headline
   end
 
   def self.today
-    # return headlines from CNBC.com for today
-
-    #scrape news site and then return headines 
+    #scrape news site and then return array of headlines(objects) i.e., [headings_1, headings_2, etc]
     self.scrape_headlines
-    # returns array of headlines(objects)...i.e., [headline_1, headline_2], to cli.rb
   
   end
 
@@ -30,16 +27,8 @@ class BizNews::Headline
   
   def author
     @author ||= get_author_doc.search("div.source a[itemprop='url']").text
-  
-    #binding.pry
-    #author_name: @doc.search("div.source a[itemprop='url']").text  
-    #author_email: @doc.search("div.source a").text
   end
   
-  def email
-    @email ||= get_author_doc.search("div.source a").text
-  end
-
 private
 
   def self.scrape_headlines
@@ -47,7 +36,7 @@ private
       headline_array = []
     
       doc = Nokogiri::HTML(open('http://www.cnbc.com'))
-      @news = doc.css("div.headline")
+      @news = doc.css("div.cnbcnewsstory div.headline")
       
       # Get the first 10 Headlines and push into an array
       (0..9).each do |n|

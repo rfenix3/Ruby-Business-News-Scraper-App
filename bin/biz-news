@@ -2,5 +2,5 @@
 
 require_relative '../lib/biz_news'
 
-
+# Namespacing is used to keeps code clean, separate methods and constants
 BizNews::CLI.new.call
