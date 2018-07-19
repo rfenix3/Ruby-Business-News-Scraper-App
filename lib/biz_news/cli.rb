@@ -5,20 +5,22 @@ class BizNews::CLI
 
   def initialize
     @systemTime = Time.now.strftime("%m/%d/%Y %H:%M")
+    @headline_max_no = 10   # this limits the number of headlines to be be displayed.
   end
 
   def call
+    BizNews::Scraper.new.scrape_headlines
     list_headlines
     menu
     goodbye
   end
   
   def list_headlines
-
-    puts "Today's Top 10 Business News from CNBC                    #{@systemTime}"
-    puts "-------------------------------------------------------------------------------------------"
-    @headlines = BizNews::Headline.today
-    @headlines.each.with_index(1) {|headline, i|
+    puts "-------------------------------------------------------------------------------------------".colorize(:blue)
+    puts "Today's Top 10 Business News from CNBC                    #{@systemTime}".colorize(:blue)
+    puts "-------------------------------------------------------------------------------------------".colorize(:blue)
+    @headlines = BizNews::Headline.all
+    @headlines.first(@headline_max_no).each.with_index(1) {|headline, i|
       puts "#{i}. #{headline.title}"
     }
   end
@@ -26,20 +28,19 @@ class BizNews::CLI
   def menu
     input = nil
     while input != "exit"
-      puts "-------------------------------------------------------------------------------------------"
-      puts "Enter the NUMBER of the headline you like to read, LIST to refresh, or EXIT to end session."
+      puts "-------------------------------------------------------------------------------------------".colorize(:blue)
+      puts "Enter the NUMBER of the headline you like to read, LIST to refresh, or EXIT to end session.".colorize(:green)
       input = gets.strip.downcase
 
       if input == "list"
         list_headlines
-      elsif input.to_i > 0
+      elsif input.to_i > 0 && input.to_i <= @headline_max_no
         if headline = BizNews::Headline.find(input.to_i)
-          # puts "#{headline.url}"
           print_article(headline)
         end
       else
         if input != "exit"
-          puts 'Not sure what you want. Please type list, headline number, or exit.'
+          puts 'Not sure what you want. Please type list, headline number, or exit.'.colorize(:red)
         end
       end
 
@@ -47,15 +48,15 @@ class BizNews::CLI
   end
   
   def print_article(headline)
+    chosen_article = BizNews::Scraper.new.scrape_article(headline.title, headline.url)
+  
     puts ""
     puts "====================================================================="
-    puts "#{headline.title}"
-    puts "Author: #{headline.author}                      #{@systemTime}"
-    # puts "Email: #{headline.email}"
+    puts "#{chosen_article.title}".colorize(:blue)
+    puts "Author: #{chosen_article.author}                      #{@systemTime}"
     puts "---------------------------------------------------------------------"
-    puts "#{headline.article}"  #this calls the method 'article' from headline method
+    puts "#{chosen_article.content}".colorize(:blue)  
 
-    # puts ""
   end
   
   def goodbye
