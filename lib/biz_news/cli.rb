@@ -48,7 +48,12 @@ class BizNews::CLI
   end
   
   def print_article(headline)
-    chosen_article = BizNews::Scraper.new.scrape_article(headline.title, headline.url)
+    if BizNews::Article.find_article(headline) 
+      # puts 'article found' 
+      chosen_article = BizNews::Article.find_article(headline)
+    else
+       chosen_article = BizNews::Scraper.new.scrape_article(headline.title, headline.url)
+    end
   
     puts ""
     puts "====================================================================="

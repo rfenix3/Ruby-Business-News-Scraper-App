@@ -2,6 +2,7 @@ class BizNews::Scraper
 
   def scrape_headlines
 
+      # puts "SCRAPE HEADLINE"
       doc = Nokogiri::HTML(open('http://www.cnbc.com'))
       @detail = doc.css("div.cnbcnewsstory div.headline")
 
@@ -17,12 +18,14 @@ class BizNews::Scraper
   end
 
   def scrape_article(headline, url)
-      article_doc = Nokogiri::HTML(open("#{url}"))
-      article = BizNews::Article.new
-      article.title = headline
-      article.author = article_doc.search("div.source a[itemprop='url']").text
-      article.content = article_doc.search("div#article_body p").text.strip
-      article
+    # puts "SCRAPING #{url}"
+    article_doc = Nokogiri::HTML(open("#{url}"))
+    article = BizNews::Article.new
+    article.title = headline
+    article.author = article_doc.search("div.source a[itemprop='url']").text
+    article.content = article_doc.search("div#article_body p").text.strip
+    article.save
+    article
   end
 
 end
