@@ -1,4 +1,4 @@
-# biz-news-cli-app
+# Ruby-Business-News-Scraper-App
 A CLI (Command Line Interface) application that scrapes the Top 10 Business Headlines from a news website (www.cnbc.com). The application is written in Ruby with Object Oriented approach in the coding design. The application uses classes, namespacing technique, and methods to manage data and processes.
 
 ## Installation
