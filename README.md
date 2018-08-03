@@ -1,5 +1,5 @@
 # biz-news-cli-app
-Application that shows the Top 10 Business Headlines for the day. 
+A CLI(Command Line Interface) application that scrapes the Top 10 Business Headlines from a news website (www.cnbc.com). The application is written in Ruby using Object Oriented Paradigm (OOP)... using Classes, namespacing technique, and methods to manage data and processes.
 
 ## Installation
 
